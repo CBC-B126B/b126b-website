@@ -24,6 +24,7 @@ jobs:
           pip install mkdocs mkdocs-material
 
       - name: Build MkDocs site
+        working-directory: B126B-Docs
         run: mkdocs build
 
       - name: Deploy to GitHub Pages
