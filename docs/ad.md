@@ -10,17 +10,28 @@ Step 4. Open the OU based on the Level
 ### Adding User Accounts
 
 Step 1. Open the OU with the instructions (here)[#user-accounts].
+
 Step 2. Right click the list and go to New - User
+
 Step 3. Enter the users First and Last Name.
+
 Step 4. Enter the students id in the login name field.
+
 Step 5. Change from @B126B.local to @student.centralbeds.ac.uk
+
 Step 6. Set the user password to the default for the year. For example - ```Dunstable{Year}```
+
 Step 7. Make sure Change user password on next logon is enabled
+
 
 ### Reseting User Passwords
 
 Step 1. Open the OU with the instructions (here)[#user-accounts].
+
 Step 2. Right click the user and select Reset Password
+
 Step 3. Set the user password to the default for the year. For example - ```Dunstable{Year}```
+
 Step 4. Make sure Change user password on next logon is enabled
+
 
