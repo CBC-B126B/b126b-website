@@ -24,8 +24,7 @@ jobs:
           pip install mkdocs mkdocs-material
 
       - name: Build MkDocs site
-        working-directory: B126B-Docs
-        run: mkdocs build -d ../site
+        run: mkdocs build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
