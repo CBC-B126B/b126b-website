@@ -1,125 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.7.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Active Directory Setup - B126B Documentation</title>
+
+
+<link href="../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../css/normalize.css" rel="stylesheet">
+<link href="../css/terminal.css" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet">
+<link href="../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "..",
+    shortcuts = "{}";
+</script>
+<script src="../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">B126B Documentation</a></div>
+        </header>
         
-        
-        
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Active Directory Setup - B126B Documentation</title>
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../css/bootstrap-theme.min.css" rel="stylesheet">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="../js/jquery-1.10.2.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-        
-    </head>
-
-    <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-        <!-- Collapsed navigation -->
-        <div class="navbar-header">
-            <!-- Expander button -->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="..">B126B Documentation</a>
-        </div>
-
-        <!-- Expanded navigation -->
-        <div class="navbar-collapse collapse">
-            <!-- Main navigation -->
-            <ul class="nav navbar-nav">
+        <nav class="terminal-menu">
             
-            
-                <li >
-                    <a href="..">Home</a>
-                </li>
-            
-            
-            
-                <li class="active">
-                    <a href="./">Active Directory Setup</a>
-                </li>
-            
-            
-            </ul>
-
-            <!-- Search, Navigation and Repo links -->
-            <ul class="nav navbar-nav navbar-right">
-                    <li >
-                        <a rel="next" href="..">
-                            <i class="fa fa-arrow-left"></i> Previous
-                        </a>
-                    </li>
-                    <li class="disabled">
-                        <a rel="prev" >
-                            Next <i class="fa fa-arrow-right"></i>
-                        </a>
-                    </li>
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
                 
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href=".." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Home</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="./" class="menu-item active" property="item" typeof="WebPage">
+                        <span property="name">Active Directory Setup</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="2">
+</li>
+                    
             </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="..">Home</a>
+        
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Active Directory Setup</span>
+    
+    
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#active-directory-setup">Active Directory Setup</a></li>
+        <li><a href="#user-accounts">User Accounts</a></li><li><a href="#adding-user-accounts">Adding User Accounts</a></li><li><a href="#reseting-user-passwords">Reseting User Passwords</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h1 id="active-directory-setup">Active Directory Setup</h1>
+<h2 id="user-accounts">User Accounts</h2>
+<p>Step 1. Connect to the Active Directory Server</p>
+<p>Step 2. Launch Active Directory Users and Computers</p>
+<p>Step 3. Open the B126B.local forest</p>
+<p>Step 4. Open the OU based on the Level</p>
+<h2 id="adding-user-accounts">Adding User Accounts</h2>
+<p>Step 1. Open the OU with the instructions <a href="#user-accounts">here</a>.</p>
+<p>Step 2. Right click the list and go to New - User</p>
+<p>Step 3. Enter the users First and Last Name.</p>
+<p>Step 4. Enter the students id in the login name field.</p>
+<p>Step 5. Change from @B126B.local to @student.centralbeds.ac.uk</p>
+<p>Step 6. Set the user password to the default for the year. For example - <code>Dunstable{Year}</code></p>
+<p>Step 7. Make sure Change user password on next logon is enabled</p>
+<h2 id="reseting-user-passwords">Reseting User Passwords</h2>
+<p>Step 1. Open the OU with the instructions <a href="#user-accounts">here</a>.</p>
+<p>Step 2. Right click the user and select Reset Password</p>
+<p>Step 3. Set the user password to the default for the year. For example - <code>Dunstable{Year}</code></p>
+<p>Step 4. Make sure Change user password on next logon is enabled</p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
         </div>
     </div>
 </div>
-
-        <div class="container">
-                <div class="row">
-                    <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-      
-    
-        <li class="main active"><a href="#active-directory-setup">Active Directory Setup</a></li>
-        
-            <li><a href="#user-accounts">User Accounts</a></li>
-        
     
     
-    </ul>
-</div></div>
-                    <div class="col-md-9" role="main">
+</body>
 
-<h1 id="active-directory-setup">Active Directory Setup</h1>
-<h2 id="user-accounts">User Accounts</h2>
-<p>Step 1. Connect to the Active Directory Server
-Step 2. Launch Active Directory Users and Computers
-Step 3. Open the B126B.local forest
-Step 4. Open the OU based on the Level</p>
-<h3 id="adding-user-accounts">Adding User Accounts</h3>
-<p>Step 1. Open the OU with the instructions (here)[#user-accounts].
-Step 2. Right click the list and go to New - User
-Step 3. Enter the users First and Last Name.
-Step 4. Enter the students id in the login name field.
-Step 5. Change from @B126B.local to @student.centralbeds.ac.uk
-Step 6. Set the user password to the default for the year. For example - <code>Dunstable{Year}</code>
-Step 7. Make sure Change user password on next logon is enabled</p>
-<h3 id="reseting-user-passwords">Reseting User Passwords</h3>
-<p>Step 1. Open the OU with the instructions (here)[#user-accounts].
-Step 2. Right click the user and select Reset Password
-Step 3. Set the user password to the default for the year. For example - <code>Dunstable{Year}</code>
-Step 4. Make sure Change user password on next logon is enabled</p></div>
-                </div>
-        </div>
-
-    <hr>
-    <footer class="container">
-        
-        <center>Documentation built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="http://kristopolous.github.io/BOOTSTRA.386">BOOTSTRA.386</a>.</center>
-    </footer>
-        <script src="../../search/main.js"></script>
-    </body>
 </html>
