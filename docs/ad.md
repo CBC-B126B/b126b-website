@@ -1,4 +1,4 @@
-# Active Directory Setup
+# Active Directory
 
 ## User Accounts
 

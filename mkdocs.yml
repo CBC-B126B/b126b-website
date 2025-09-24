@@ -2,3 +2,4 @@ site_name: B126B Documentation
 
 theme:
   name: terminal
+  palette: gruvbox_dark
