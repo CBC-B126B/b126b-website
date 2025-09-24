@@ -25,7 +25,7 @@ jobs:
 
       - name: Build MkDocs site
         working-directory: B126B-Docs
-        run: mkdocs build
+        run: mkdocs build -d ../site
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
