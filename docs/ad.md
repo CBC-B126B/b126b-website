@@ -3,13 +3,16 @@
 ## User Accounts
 
 Step 1. Connect to the Active Directory Server
+
 Step 2. Launch Active Directory Users and Computers
+
 Step 3. Open the B126B.local forest
+
 Step 4. Open the OU based on the Level
 
-### Adding User Accounts
+## Adding User Accounts
 
-Step 1. Open the OU with the instructions (here)[#user-accounts].
+Step 1. Open the OU with the instructions [here](#user-accounts).
 
 Step 2. Right click the list and go to New - User
 
@@ -24,9 +27,9 @@ Step 6. Set the user password to the default for the year. For example - ```Duns
 Step 7. Make sure Change user password on next logon is enabled
 
 
-### Reseting User Passwords
+## Reseting User Passwords
 
-Step 1. Open the OU with the instructions (here)[#user-accounts].
+Step 1. Open the OU with the instructions [here](#user-accounts).
 
 Step 2. Right click the user and select Reset Password
 
