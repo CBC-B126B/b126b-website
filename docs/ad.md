@@ -8,7 +8,7 @@ Step 2. Launch Active Directory Users and Computers
 
 Step 3. Open the B126B.local forest
 
-Step 4. Open the OU based on the Level
+Step 4. Open the OU (Organisation Unit) based on the Level
 
 ## Adding User Accounts
 
